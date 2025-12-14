@@ -90,10 +90,10 @@ print(f"파이(π) = {pi:.4f}")  # 소수점 4자리 (4 decimal places)
 print("\n" + "="*50 + "\n")
 
 # 정렬 (Alignment)
-print(f"{'이름':<10}{'나이':^10}{'직업':>10}")  # < 왼쪽, ^ 가운데, > 오른쪽
-print(f"{'Name':<10}{'Age':^10}{'Job':>10}")  # < left, ^ center, > right
-print(f"{'김철수':<10}{'25':^10}{'학생':>10}")
-print(f"{'이영희':<10}{'30':^10}{'직장인':>10}")
+print(f"{'이름':<10},{'나이':^10},{'직업':>10}")  # < 왼쪽, ^ 가운데, > 오른쪽
+print(f"{'Name':<10},{'Age':^10},{'Job':>10}")  # < left, ^ center, > right
+print(f"{'김철수':<10},{'25':^10},{'학생':>10}")
+print(f"{'이영희':<10},{'30':^10},{'직장인':>10}")
 
 print("\n" + "="*50 + "\n")
 
@@ -105,6 +105,7 @@ print(f"천 단위 구분: {large_number:,}")  # 1,234,567,890
 print("\n" + "="*50 + "\n")
 
 # 백분율 표시 (Percentage display)
-percentage = 0.8567
-print(f"비율: {percentage}")  # 0.8567
-print(f"백분율: {percentage:.2%}")  # 85.67%
+percentage = 0.85676
+print(f"비율: {percentage}")  # 0.85676
+print(f"백분율: {percentage:%}")  # 85.670000%
+print(f"백분율: {percentage:.2%}")  # 85.67% (소숫점 2째자리 까지 표시, 소숫점 3째자리에서 반올림)
