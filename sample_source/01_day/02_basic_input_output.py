@@ -9,8 +9,9 @@ Description: Basic input/output - Using input() and print() functions
 
 # 사용자 이름 입력받기 (Get user's name)
 name = input("이름을 입력하세요 (Enter your name): ")
-print("안녕하세요,", name, "님!")
-print(f"Hello, {name}!")
+age = 20
+print("안녕하세요,", name, "님!" , "나이:" , age)
+print(f"Hello, {name}! 당신의 나이는 {age}")
 
 print("\n" + "="*50 + "\n")
 
@@ -18,18 +19,23 @@ print("\n" + "="*50 + "\n")
 
 # 방법 1: 콤마로 구분 (Method 1: Separate with comma)
 print("이름:", name)
+print("이름:", name, ", 나이:", age)
 
 # 방법 2: 문자열 연결 (Method 2: String concatenation)
 print("이름: " + name)
+print("이름: " + name + ",나이: " + name)
 
 # 방법 3: f-string (Python 3.6+) - 추천! (Recommended!)
 print(f"이름: {name}")
+print(f"이름: {name}, 나이:{age}")
 
 # 방법 4: format() 메서드 (Method 4: format() method)
 print("이름: {}".format(name))
+print("이름: {}, 나이:{}".format(name,age))
 
 # 방법 5: % 포맷팅 (Method 5: % formatting - Old style)
 print("이름: %s" % name)
+print("이름: %s, 나이:%d" % (name,age))
 
 print("\n" + "="*50 + "\n")
 
