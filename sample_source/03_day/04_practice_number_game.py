@@ -1,8 +1,8 @@
 """
 파일명: 04_practice_number_game.py
-설명: 실습 과제 - 숫자 맞추기 게임 (쉬운 버전)
+설명: 실습 과제 - 숫자 맞추기 게임
 Filename: 04_practice_number_game.py
-Description: Practice - Number guessing game (Easy version)
+Description: Practice - Number guessing game
 """
 
 import random
@@ -29,7 +29,6 @@ print("2. 보통 (Normal) - 7번 시도")
 print("3. 어려움 (Hard) - 5번 시도")
 print()
 
-# 시뮬레이션: 보통 난이도 선택 (Simulation: Normal difficulty)
 difficulty = input("선택 (1/2/3) [2]: ") or "2"
 
 if difficulty == "1":
@@ -51,7 +50,6 @@ answer = random.randint(1, 100)
 attempts = 0  # 시도 횟수 카운터 (Attempt counter)
 guess_history = []  # 추측 기록 (Guess history)
 
-# 게임 시작 (Start game)
 print("="*70)
 print("게임 시작! (Game Start!)")
 print("="*70)
@@ -68,25 +66,14 @@ while attempts < max_attempts:
 
     # 사용자 입력 (User input)
     try:
-        # 실제 게임에서는 input() 사용, 여기서는 시뮬레이션
-        # In actual game, use input(), here we simulate
-        if attempts == 0:
-            guess = 50  # 첫 시도는 중간값 (First try: middle value)
-        else:
-            # 이진 탐색 알고리즘 시뮬레이션 (Binary search simulation)
-            if guess < answer:
-                low = guess + 1
-                guess = (low + min(100, guess + 30)) // 2
-            else:
-                high = guess - 1
-                guess = (max(1, guess - 30) + high) // 2
-
-        print(f"추측: {guess}")
+        guess_input = input("숫자를 입력하세요 (1-100) [Enter number]: ")
+        guess = int(guess_input)
 
         # 입력 검증 (Input validation)
         if guess < 1 or guess > 100:
             print("❌ 1부터 100 사이의 숫자를 입력하세요!")
             print("   Please enter a number between 1 and 100!")
+            print()
             continue
 
         # 시도 횟수 증가 (Increment attempt counter)
@@ -158,7 +145,7 @@ if guess_history:
 
 print()
 
-# 다시 하기 옵션 (Play again option)
+# 이진 탐색 전략 안내 (Binary search strategy guide)
 print("="*70)
 print("💡 Tip: 이진 탐색 전략을 사용하면 더 빨리 찾을 수 있어요!")
 print("   Using binary search strategy helps you find faster!")

@@ -1,11 +1,11 @@
-# Python Programming Fundamentals - 13일 완성 과정
+# Python Programming Fundamentals - 14일 완성 과정
 ## 파이썬 기본 교육 커리큘럼
 
 ---
 
 ## 교육 과정 개요
 
-본 교육 과정은 프로그래밍 입문자를 대상으로 파이썬의 기초부터 실무 활용까지 체계적으로 학습하는 **13일 완성 과정**입니다.
+본 교육 과정은 프로그래밍 입문자를 대상으로 파이썬의 기초부터 데이터 분석까지 체계적으로 학습하는 **14일 완성 과정**입니다.
 
 ---
 
@@ -125,9 +125,16 @@
 ### 13일차: 실전 라이브러리 활용 및 최종 프로젝트
 - 정규표현식 (re 모듈)
 - 웹 크롤링 (requests, BeautifulSoup)
-- 데이터 분석 기초 (pandas, numpy)
 - API 활용하기
 - 최종 프로젝트 개발 및 발표
+
+### 14일차: 데이터 분석 & 시각화
+- NumPy 기초 (배열 연산, 통계 함수)
+- Pandas 기초 (DataFrame, 데이터 처리)
+- CSV/Excel 파일 읽기 및 처리
+- Matplotlib을 활용한 데이터 시각화
+- Seaborn을 활용한 고급 시각화
+- 실전 데이터 분석 프로젝트
 
 ---
 
@@ -145,7 +152,8 @@
 - 과제를 통한 실전 능력 향상
 
 ### 프로젝트
-- 13일차에 최종 프로젝트 진행
+- 13일차에 파이썬 기초 최종 프로젝트
+- 14일차에 데이터 분석 프로젝트
 - 학습한 모든 내용을 통합하여 실전 프로그램 개발
 - 개인 또는 팀 프로젝트 선택 가능
 
@@ -157,6 +165,7 @@
 - Python 3.10 이상
 - Visual Studio Code 또는 PyCharm
 - Git (선택사항)
+- Jupyter Notebook (14일차 데이터 분석용, 선택사항)
 
 ### 하드웨어
 - 컴퓨터 (Windows, macOS, Linux 모두 가능)
@@ -177,12 +186,14 @@
 
 ### 초급 → 중급
 - Django / Flask 웹 프레임워크
-- 데이터 분석 심화 (Pandas, NumPy, Matplotlib)
+- 데이터 분석 심화 (Pandas 고급 기능, 통계 분석)
 - 자동화 스크립트 작성
 - 웹 크롤링 및 데이터 수집
+- 데이터 시각화 심화 (Plotly, Bokeh)
 
 ### 중급 → 고급
-- 머신러닝 / 딥러닝 (TensorFlow, PyTorch)
+- 머신러닝 / 딥러닝 (Scikit-learn, TensorFlow, PyTorch)
+- 데이터 과학 전문가 과정 (통계, 확률, 알고리즘)
 - FastAPI를 이용한 API 서버 개발
 - 비동기 프로그래밍 (asyncio)
 - 테스트 주도 개발 (pytest)
